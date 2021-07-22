@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.homeFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_fitstep_logo_black"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+
+    <ImageButton
+        android:id="@+id/dial"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_baseline_phone_msg"
+        android:backgroundTint="#000"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/card_bg_black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_baseline_credit_card"
+        app:layout_constraintLeft_toLeftOf="@id/txt_days"
+        app:layout_constraintTop_toTopOf="@id/imageView4" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/inter"
+        android:text="Premium Card"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Member ID"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/txt_memberid"
+        app:layout_constraintStart_toStartOf="@id/txt_memberid" />
+
+    <TextView
+        android:id="@+id/txt_memberid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/firacode_regular"
+        android:text="NULL"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+
+    <TextView
+        android:id="@+id/txt_expireon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/firacode_regular"
+        android:text="05/20"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@id/txt_memberid"
+        app:layout_constraintTop_toBottomOf="@id/txt_memberid" />
+
+    <TextView
+        android:id="@+id/txt_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter"
+        android:text="70"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@id/imageView4"
+        app:layout_constraintTop_toBottomOf="@id/txt_memberid" />
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="d"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_days"
+        app:layout_constraintLeft_toRightOf="@+id/txt_days" />
+
+    <TextView
+        android:id="@+id/txt_hrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+
+        android:fontFamily="@font/inter"
+        android:text="05h"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/txt_days" />
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@id/imageView4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="405dp">
+
+
+        <TextView
+            android:id="@+id/txt_quote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter"
+            android:text="All progress takes place outside the comfort zone."
+            android:textColor="#000"
+            android:textSize="20dp"
+
+            />
+
+
+
+    </ScrollView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ani_load_quotes"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@id/scrollview"
+        app:layout_constraintEnd_toEndOf="@id/scrollview"
+        app:layout_constraintTop_toTopOf="@id/scrollview"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_dots" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_baseline_quotes"
+        app:layout_constraintBottom_toTopOf="@id/scrollview"
+        app:layout_constraintLeft_toLeftOf="@id/scrollview" />
+
+    <ImageView
+        android:id="@+id/btn_nextQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_outline_arrow_right"
+        app:layout_constraintBottom_toTopOf="@id/scrollview"
+        app:layout_constraintRight_toRightOf="@id/scrollview" />
+
+
+    <ImageView
+
+        android:id="@+id/imageView6"
+        android:layout_width="11dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_outline_arrow_updown"
+        app:layout_constraintBottom_toBottomOf="@id/scrollview"
+        app:layout_constraintLeft_toRightOf="@id/scrollview"
+        app:layout_constraintTop_toTopOf="@id/scrollview" />
+
+    <Button
+        android:id="@+id/btn_bmi"
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+        android:background="@drawable/card_bg_black"
+        android:drawableLeft="@drawable/ic_baseline_calculator_15"
+        android:drawableTint="#fff"
+        android:fontFamily="@font/inter"
+        android:paddingLeft="34dp"
+        android:paddingRight="25dp"
+        android:text="BMI"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_calorie"
+        app:layout_constraintEnd_toStartOf="@+id/btn_calorie"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="@+id/btn_calorie"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_calorie"
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/card_bg_black"
+        android:drawableLeft="@drawable/ic_oultine_fire_15"
+        android:drawableTint="#fff"
+        android:fontFamily="@font/inter"
+        android:paddingLeft="18dp"
+        android:paddingRight="23dp"
+        android:text="Calorie"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_badge"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_bmi"
+        app:layout_constraintTop_toBottomOf="@id/scrollview" />
+
+    <Button
+        android:id="@+id/btn_badge"
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+
+
+        android:background="@drawable/card_bg_black"
+        android:drawableLeft="@drawable/ic_outline_star_15"
+        android:drawableTint="#fff"
+        android:fontFamily="@font/inter"
+        android:paddingLeft="18dp"
+        android:paddingRight="25dp"
+        android:text="Badge"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_calorie"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintStart_toEndOf="@+id/btn_calorie"
+        app:layout_constraintTop_toTopOf="@+id/btn_calorie"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.playFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_con"
+        android:layout_width="match_parent"
+        android:layout_height="758dp"
+        tools:context=".Fragments.playFragment">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/ubermovemedium"
+            android:text="Workout"
+            android:textColor="#000"
+            android:textSize="45sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/player" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/player"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:autoPlay="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:showFullScreenButton="false"
+            app:showYouTubeButton="false"
+            app:videoId="1VZaIG5WZH0"
+
+            />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="30dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="30dp" />
+
+
+        <TextView
+            android:id="@+id/txt_diet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/inter"
+            android:text="Diet"
+            android:drawableLeft="@drawable/ic_baseline_diet"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="@id/guideline22"
+            app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+        <TextView
+            android:id="@+id/txt_fitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter"
+            android:drawableLeft="@drawable/ic_baseline_fitness"
+            android:drawablePadding="10dp"
+            android:text="Fitness"
+            android:textColor="#000"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="@id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/txt_diet" />
+
+        <TextView
+            android:id="@+id/txt_blog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter"
+            android:text="Blog"
+            android:drawableLeft="@drawable/ic_baseline_blog"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/txt_fitness" />
+
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/ubermovemedium"
+            android:text="Follow us"
+            android:textColor="#000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView10"
+            app:layout_constraintEnd_toStartOf="@id/guideline23"
+            app:layout_constraintStart_toStartOf="@id/guideline22" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_followus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline23"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            android:layout_marginBottom="80dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

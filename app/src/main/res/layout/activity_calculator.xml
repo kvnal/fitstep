@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculator">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubermovemedium"
+        android:text="Calculator"
+        android:textColor="#000"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_weight"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/black_outline"
+        android:hint="Weight (kg)"
+        android:inputType="number"
+        android:nextFocusDown="@id/edit_height"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/hintcolor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edit_height"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/black_outline"
+        android:hint="Height (cm)"
+        android:inputType="number"
+        android:nextFocusDown="@id/spinner_gender"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/hintcolor"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_weight"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/edit_weight"
+        app:layout_constraintTop_toTopOf="@+id/edit_weight"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edit_age"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+
+
+        android:background="@drawable/black_outline"
+        android:hint="Age"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/hintcolor"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_gender"
+        app:layout_constraintStart_toStartOf="@+id/edit_height"
+        app:layout_constraintTop_toTopOf="@+id/spinner_gender"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner_gender"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="30dp"
+        android:background="@drawable/black_outline"
+        android:nextFocusDown="@id/edit_age"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_weight" />
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="50dp"
+        android:background="#000"
+        android:fontFamily="@font/inter"
+        android:text="Check"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_gender"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+
+        android:fontFamily="@font/inter"
+        android:text="BMI"
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/inter"
+        android:text="Calorie"
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <TextView
+        android:id="@+id/txt_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="5"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/secureblue"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_bmi_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/inter"
+
+        android:textColor="@color/hintcolor"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_bmi"
+        app:layout_constraintStart_toEndOf="@+id/txt_bmi" />
+
+    <TextView
+        android:id="@+id/txt_calorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/secureblue"
+        android:textSize="30sp"
+        android:maxLength="4"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+
+        android:id="@+id/txt_required"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:fontFamily="@font/inter"
+        android:textColor="@color/hintcolor"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_calorie"
+        app:layout_constraintStart_toEndOf="@+id/txt_calorie" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="70dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

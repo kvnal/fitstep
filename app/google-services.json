@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "671950217585",
+    "firebase_url": "https://data-1717d.firebaseio.com",
+    "project_id": "data-1717d",
+    "storage_bucket": "data-1717d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671950217585:android:5e01619c13040b8d1f16d0",
+        "android_client_info": {
+          "package_name": "com.example.fitstep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671950217585-rgaa5igtgjktrqolac3sl4iscp14m93d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-511PzgZ_iVZldWSzBNaiXSTeKVzNNXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671950217585-rgaa5igtgjktrqolac3sl4iscp14m93d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
